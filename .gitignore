@@ -1,0 +1,18 @@
+# Ignore virtual environments
+venv/
+.venv/
+
+# Ignore zip archives
+*.zip
+
+# Ignore HTML files
+*.html
+
+# Ignore large Vosk model folders and ONNX models
+vosk-model-*/
+*.onnx
+*.json
+
+# Ignore Python caches
+__pycache__/
+*.pyc
