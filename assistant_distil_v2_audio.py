@@ -86,7 +86,7 @@ def listen_to_user_offline():
     RATE = 16000
     
     SILENCE_THRESHOLD = 450   
-    PAUSE_LIMIT_SECONDS = 1.5 
+    PAUSE_LIMIT_SECONDS = 1.0 
     MAX_RECORD_SECONDS = 20.0 
     
     try:
@@ -165,7 +165,7 @@ def query_local_llm(user_message):
         "stream": False,
         "options": {
             "num_ctx": 1024,        
-            "temperature": 0.4,     
+            "temperature": 0.3,   #0.4  
             "top_p": 0.8,           
             "num_predict": 45,      
             "num_thread": 4         
